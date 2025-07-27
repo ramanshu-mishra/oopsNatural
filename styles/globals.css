@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+/* Animations for fade-in and scale-in */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes scale-in {
+  from { transform: scale(0.7); }
+  to { transform: scale(1); }
+}
+.animate-fade-in { animation: fade-in 1s 0.3s both; }
+.animate-scale-in { animation: scale-in 0.8s 0.7s both; }
+/* Add more utility classes as needed */
+
+@theme inline{
+    --font-timesNewRoman : "Times New Roman";
+    --shadow-cardShadow: 0px 1px 1px rgba(0, 0, 0, 0.05),0px 4px 6px rgba(34, 42, 53, 0.04),0px 24px 68px rgba(47, 48, 55, 0.05),0px -5px 5px rgba(0, 0, 0 ,0.05);
+}
