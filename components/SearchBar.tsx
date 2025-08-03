@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 
 const SearchBar: React.FC<{ onSearch: (search: string) => void }> = ({ onSearch }) => {
-  const [term, setTerm] = useState('');
+
+  
+  const [term,setTerm] = useState("");
   const [searching, setSearching] = useState(false);
   const [v, setV] = useState(0);
 
@@ -21,7 +23,7 @@ const SearchBar: React.FC<{ onSearch: (search: string) => void }> = ({ onSearch 
       <input
         type="text"
         value={term}
-        onChange={e => setTerm(e.target.value)}
+        onChange={e => {setTerm(e.target.value)}}
         placeholder="Search for products..."
         className=" p-2 rounded-lg   w-full focus:ring-0  focus:outline-0"
       />
